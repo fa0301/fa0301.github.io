@@ -1,0 +1,79 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>JS</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+	    // var target = document.querySelector('body');
+	    var Links = {
+	      setColor:function(color){
+	        var alist = document.querySelectorAll('a');
+	            var i = 0;
+	              while (i < alist.length) {
+	                alist[i].style.color= color;
+	                i = i + 1;
+	              }        
+	        }
+	    }
+	    // function linkSetColor(color) {
+	    //   var alist = document.querySelectorAll('a');
+	    // var i = 0;
+	    // while (i < alist.length) {
+	    // alist[i].style.color= color;
+	    // i = i + 1;
+	    // }
+	    // }
+	    var Body = {
+	      setColor:function(color) {
+	        document.querySelector('body').style.color = color;
+	      },
+	      backgroundSetColor:function(color) {
+	        document.querySelector('body').style.backgroundColor = color;
+	      }
+	    }
+	    // function bodySetColor(color) {
+	    //   target.style.color = color;
+	    // }
+	    // function backgroundSetColor(color) {
+	    //   target.style.backgroundColor = color;
+	    // }
+			function nightDayHandler(self) {
+				if (self.value === 'night') {
+						Body.backgroundSetColor('black');
+						Body.setColor('white');
+						self.value = 'day';
+	        
+	          Links.setColor('powderblue');
+				} else {
+				Body.backgroundSetColor('white');
+				Body.setColor('black');
+				self.value = 'night';
+	        
+	      Links.setColor('blue');
+
+				}
+			}
+		</script>
+			<h1>
+				Toggle
+			</h1>
+			  <ol>
+				<li><a href="1.html">HTML</a></li>
+				<li><a href="2.html">CSS</a></li>
+				<li><a href="3.html">JavaScript</a></li>
+			  </ol>
+			<h2>
+				Toggle Button
+			</h2>
+			<p>
+				<input type="button" value="night" onclick="
+					nightDayHandler(this);														
+				">
+			</p>
+			<p>
+				text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text 
+			</p>
+	</body>
+</html>

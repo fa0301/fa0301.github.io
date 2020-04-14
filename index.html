@@ -1,79 +1,23 @@
-<!doctype HTML>
+<!doctype html>
 <html>
-	<head>
-		<title>JS</title>
-		<meta charset="utf-8">
-	</head>
-	<body>
-		<script>
-	    // var target = document.querySelector('body');
-	    var Links = {
-	      setColor:function(color){
-	        var alist = document.querySelectorAll('a');
-	            var i = 0;
-	              while (i < alist.length) {
-	                alist[i].style.color= color;
-	                i = i + 1;
-	              }        
-	        }
-	    }
-	    // function linkSetColor(color) {
-	    //   var alist = document.querySelectorAll('a');
-	    // var i = 0;
-	    // while (i < alist.length) {
-	    // alist[i].style.color= color;
-	    // i = i + 1;
-	    // }
-	    // }
-	    var Body = {
-	      setColor:function(color) {
-	        document.querySelector('body').style.color = color;
-	      },
-	      backgroundSetColor:function(color) {
-	        document.querySelector('body').style.backgroundColor = color;
-	      }
-	    }
-	    // function bodySetColor(color) {
-	    //   target.style.color = color;
-	    // }
-	    // function backgroundSetColor(color) {
-	    //   target.style.backgroundColor = color;
-	    // }
-			function nightDayHandler(self) {
-				if (self.value === 'night') {
-						Body.backgroundSetColor('black');
-						Body.setColor('white');
-						self.value = 'day';
-	        
-	          Links.setColor('powderblue');
-				} else {
-				Body.backgroundSetColor('white');
-				Body.setColor('black');
-				self.value = 'night';
-	        
-	      Links.setColor('blue');
-
-				}
-			}
-		</script>
-			<h1>
-				Toggle
-			</h1>
-			  <ol>
-				<li><a href="1.html">HTML</a></li>
-				<li><a href="2.html">CSS</a></li>
-				<li><a href="3.html">JavaScript</a></li>
-			  </ol>
-			<h2>
-				Toggle Button
-			</h2>
-			<p>
-				<input type="button" value="night" onclick="
-					nightDayHandler(this);														
-				">
-			</p>
-			<p>
-				text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text 
-			</p>
-	</body>
+<head>
+  <title>WEB1 - Welcome</title>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="colors.js"></script>
+</head>
+<body>
+  <h1><a href="index.html">WEB</a></h1>
+  <input id="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
+  ">
+  <ol>
+    <li><a href="1.html">HTML</a></li>
+    <li><a href="2.html">CSS</a></li>
+    <li><a href="3.html">JavaScript</a></li>
+  </ol>
+  <h2>WEB</h2>
+  <p>The World Wide Web (abbreviated WWW or the Web) is an information space where documents and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and can be accessed via the Internet.[1] English scientist Tim Berners-Lee invented the World Wide Web in 1989. He wrote the first web browser computer program in 1990 while employed at CERN in Switzerland.[2][3] The Web browser was released outside of CERN in 1991, first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991.
+  </p>
+</body>
 </html>

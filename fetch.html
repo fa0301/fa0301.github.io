@@ -13,5 +13,12 @@
         })
       })
     ">
+    <input type="button" name="fetchButtonHtml" value="fetchHtml" onclick="
+      fetch('html').then(function(response){
+        response.text().then(function(text){
+          alert(text);
+        })
+      })
+    ">
   </body>
 </html>

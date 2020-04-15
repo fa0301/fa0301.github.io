@@ -15,10 +15,12 @@
       })
     ">
     <h2>html</h2>
+    <article class="htmlArticle">
+    </article>
     <input type="button" name="fetchButtonHtml" value="fetchHtml" onclick="
       fetch('html').then(function(response){
         response.text().then(function(text){
-          alert(text);
+          document.querySelector('article').innerHTML = text;
         })
       })
     ">

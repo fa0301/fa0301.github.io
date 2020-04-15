@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fetch</title>
+  </head>
+  <body>
+    <h1>Fetch</h1>
+    <input type="button" name="fetchButton" value="fetch" onclick="
+      fetch('css').then(function(response){
+        response.text().then(function(text){
+          alert(text);
+        })
+      })
+    ">
+  </body>
+</html>

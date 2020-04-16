@@ -16,18 +16,10 @@
       fetchPage('html');
       ">HTML</a></li>
     <li><a href="#" onclick="
-      fetch('css').then(function(response){
-        response.text().then(function(text){
-          document.querySelector('article').innerHTML = text;
-        })
-      })
+      fetchPage('css')
       ">CSS</a></li>
     <li><a href="#" onclick="
-      fetch('javascript').then(function(response){
-        response.text().then(function(text){
-          document.querySelector('article').innerHTML = text;
-        })
-      })
+      fetchPage('javascript')
       ">JavaScript</a></li>
   </ol>
   <article class="contentArea">

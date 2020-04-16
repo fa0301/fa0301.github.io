@@ -26,6 +26,7 @@
     "> -->
     <input type="button" name="fetchLog" value="fetchLog" onclick="
       fetch('javascript').then(function(response){
+        console.log(response);
         if (response.status == '404') {
           alert('ファイルがありません');
         }

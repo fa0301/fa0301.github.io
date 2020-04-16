@@ -34,9 +34,11 @@
 				var listArray = text.split(',');
 				//配列の長さ分繰り返して書く
 				//<li><a href="#!html" onclick="fetchPage('html');">HTML</a></li>
+				var listItem = listArray[i];
 				var i = 0;
+				var tag = '<li>'+listItem+'</li>'
 				while (i < listArray.length){
-					document.querySelector('#nav').innerHTML = '<li><a href="#!' + listArray[i] + ' onclick="fetchPage(' + listArray[i] + ');">' + listArray[i] + '</a></li>';
+					document.querySelector('#nav').innerHTML = tag;
 					i = i + 1;
 				}
 			})

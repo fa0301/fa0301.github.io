@@ -6,7 +6,7 @@
   </head>
   <body>
     <h1>Fetch</h1>
-    <h2>CSS</h2>
+    <!-- <h2>CSS</h2>
     <input type="button" name="fetchButtonCss" value="fetchCss" onclick="
       fetch('css').then(function(response){
         response.text().then(function(text){
@@ -23,6 +23,12 @@
           document.querySelector('article').innerHTML = text;
         })
       })
+    "> -->
+    <input type="button" name="fetchLog" value="fetchLog" onclick="
+      fetch.('html').then(function(response){
+        console.log(response);
+      });
+
     ">
   </body>
 </html>

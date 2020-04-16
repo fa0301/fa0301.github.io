@@ -31,7 +31,14 @@
 		}
 		fetch('list').then(function(response){
 			response.text().then(function(text){
-				document.querySelector('#nav').innerHTML = text;
+				const listArray = text.split(',');
+				//配列の長さ分繰り返して書く
+				//<li><a href="#!html" onclick="fetchPage('html');">HTML</a></li>
+				var i = 0;
+				while (i < listArray.length){
+					document.querySelector('#nav').innerHTML = '<li><a href="#!' + listArray[i] + ' onclick="fetchPage(' + listArray[i] + ');">' + listArray[i] + '</a></li>';
+					i = i + 1;
+				}
 			})
 		});
 

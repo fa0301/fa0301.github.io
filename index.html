@@ -31,7 +31,7 @@
 		}
 		fetch('list').then(function(response){
 			response.text().then(function(text){
-				const listArray = text.split(',');
+				var listArray = text.split(',');
 				//配列の長さ分繰り返して書く
 				//<li><a href="#!html" onclick="fetchPage('html');">HTML</a></li>
 				var i = 0;

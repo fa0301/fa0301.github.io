@@ -26,6 +26,10 @@
 				})
 			});
 		}
+		if(location.hash){
+			//hashがあればその内容のfetchPageを実行
+			fetchPage(location.hash.substring(1));
+		} 
 	</script>
 </body>
 </html>

@@ -34,10 +34,13 @@
 				console.log(text);
 				var items = text.split(',');
 				var i = 0;
+				var tags = '';
 				while (i < items.length){
 					var item = items[i];
 					var tag = '<li>'+item+'</li>';
 					console.log(tag);
+					tags = tags + tag;
+					console.log(tags);
 					// <li><a href="#!html" onclick="fetchPage('html');">HTML</a></li>
 					i = i + 1;
 				}

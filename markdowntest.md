@@ -1,3 +1,5 @@
-# Heading 1
-## heading 2
-this is plane paragraph.
+# github pagesで「MD」ファイルを入れてみる
+github pagesでは、mdファイルを入れて、該当ファイルパスをアドレスバーに入れるだけで簡単にHTML化したページを見せることがわかったので試してみました。
+
+## どうか？
+CMSみたいに使えなくはないのですが、<head>とか触らないのはやはりmdの弱点ですね！方法をまた考えます！

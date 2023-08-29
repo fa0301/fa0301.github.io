@@ -24,8 +24,12 @@
         <li>GTMでこのページから書き出す値を受け取る変数、GA4タグの追加フィールドを設定する</li>
         <li>GA4からカスタムディメンションを設定する</li>
     </ol>
-    <script>
-        let fileName = 'ga4Training';
-    </script>
+	<script>
+		// GTMの変数を定義して値をセット
+		window.dataLayer = window.dataLayer || [];
+		window.dataLayer.push({
+			'fileName': 'test'
+		});
+	</script>
 </body>
 </html>

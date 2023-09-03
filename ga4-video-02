@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-P4VT7G54');</script>
+	<!-- End Google Tag Manager -->
+	<title>GA4動画計測02:動画は複数</title>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4VT7G54"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+    <h1>GA4でYouTube動画を計測する</h1>
+	<h2>Powell</h2>
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JyLhrQ6SB5c?si=R0Kyi0DFv64ZbioX?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+	<h2>DGK</h2>
+	<div>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/AvE52pszMKk?si=0_pz5x4G4OTCvD0y?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	</div>
+</body>
+</html>
